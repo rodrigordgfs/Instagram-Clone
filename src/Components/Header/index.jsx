@@ -9,7 +9,7 @@ import User from "../../assets/images/user.jpg";
 
 export default function Header() {
   return (
-    <div className="bg-white flex flex-row border-b-2 border-zinc-200">
+    <div className="bg-white flex flex-row border-b border-zinc-200">
       <div className="my-0 mx-auto max-w-5xl w-full flex flex-row justify-between items-center px-5 py-3">
         <img src={Logo} alt="Logo do Instagram" />
         <div>
