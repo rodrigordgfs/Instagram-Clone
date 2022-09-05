@@ -5,7 +5,7 @@ import { StorieContext } from "../../Contexts/Storie";
 export default function Stories() {
   const { stories } = useContext(StorieContext);
   return (
-    <div className="border border-zinc-200 bg-white rounded-md flex flex-row p-4">
+    <div className="border border-zinc-200 bg-white rounded-md flex flex-row p-3">
       <Carousel show={5} slide={3} swiping={true} transition={0.5}>
         {stories.map((story) => (
           <div key={story.id} className="flex flex-col items-center">

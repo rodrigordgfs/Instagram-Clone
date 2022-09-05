@@ -1,4 +1,6 @@
 import Stories from "../Stories";
+import UserSuggests from "../UserSuggests";
+import UserTile from "../UserTile";
 
 export default function TimeLine() {
   return (
@@ -6,7 +8,10 @@ export default function TimeLine() {
       <div className="w-full max-w-md">
         <Stories />
       </div>
-      <div className="bg-blue-600 w-full max-w-sm">teste2</div>
+      <div className="w-full max-w-sm">
+        <UserTile />
+        <UserSuggests />
+      </div>
     </div>
   );
 }

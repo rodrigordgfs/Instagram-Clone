@@ -5,7 +5,6 @@ import HomeIcon from "../../assets/icons/home.svg";
 import LikeIcon from "../../assets/icons/like.svg";
 import Logo from "../../assets/icons/logo.svg";
 import NewIcon from "../../assets/icons/new.svg";
-import User from "../../assets/images/user.jpg";
 
 export default function Header() {
   return (
@@ -42,7 +41,7 @@ export default function Header() {
             <li>
               <img
                 className="rounded-full w-6 h-6 outline outline-offset-2 outline-1 outline-zinc-200 cursor-pointer"
-                src={User}
+                src="https://instagram-clone-shinodalabs.s3.sa-east-1.amazonaws.com/user.jpg"
                 alt="Imagem do Usuário"
               />
             </li>
