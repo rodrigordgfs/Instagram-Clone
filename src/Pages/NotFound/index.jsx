@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Header from "../../Components/Header";
 
 export default function NotFound() {
@@ -10,7 +11,7 @@ export default function NotFound() {
         </h1>
         <p className="text-base mt-3">
           O link em que você clicou pode não estar funcionando, ou a página pode
-          ter sido removida. <span>Voltar para o Instagram</span>.
+          ter sido removida. <Link to="/">Voltar para o Instagram</Link>.
         </p>
       </div>
     </main>

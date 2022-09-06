@@ -10,7 +10,7 @@ import UserTile from "../UserTile";
 export default function TimeLine() {
   return (
     <div className="my-0 mx-auto max-w-4xl flex flex-row gap-8 py-6 justify-center">
-      <div className="w-full max-w-lg">
+      <div className="w-full max-w-lg  px-2 lg:px-0">
         <StorieProvider>
           <Stories />
         </StorieProvider>
@@ -18,7 +18,7 @@ export default function TimeLine() {
           <Feed />
         </FeedProvider>
       </div>
-      <aside className="w-full max-w-sm">
+      <aside className="w-full max-w-sm hidden lg:block">
         <UserTile />
         <SuggestUsersProvider>
           <UserSuggests />
