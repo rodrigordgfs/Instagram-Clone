@@ -4,10 +4,11 @@ import { StorieContext } from "../../Contexts/Storie";
 
 export default function Stories() {
   const { stories } = useContext(StorieContext);
+
   return (
-    <div className="border border-zinc-200 bg-white rounded-md flex flex-row p-3">
+    <div className="border border-zinc-200 bg-white lg:rounded-md flex flex-row p-3">
       <Carousel
-        show={window.innerWidth > 1024 ? 6 : 4}
+        show={5.5}
         slide={3}
         swiping={true}
         transition={0.5}

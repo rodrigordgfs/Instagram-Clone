@@ -5,31 +5,31 @@ export default function Footer() {
     <footer className="mt-4 flex flex-col">
       <ul className="flex flex-row flex-wrap gap-x-2 text-xs text-zinc-400">
         <li>
-          <a href="_">Sobre</a>
+          <a href="/">Sobre</a>
         </li>
         <li>
-          <a href="_">Ajuda</a>
+          <a href="/">Ajuda</a>
         </li>
         <li>
-          <a href="_">API</a>
+          <a href="/">API</a>
         </li>
         <li>
-          <a href="_">Carreiras</a>
+          <a href="/">Carreiras</a>
         </li>
         <li>
-          <a href="_">Privacidade</a>
+          <a href="/">Privacidade</a>
         </li>
         <li>
-          <a href="_">Termos</a>
+          <a href="/">Termos</a>
         </li>
         <li>
-          <a href="_">Termos</a>
+          <a href="/">Termos</a>
         </li>
         <li>
-          <a href="_">Localizações</a>
+          <a href="/">Localizações</a>
         </li>
         <li>
-          <a href="_">Idioma</a>
+          <a href="/">Idioma</a>
         </li>
       </ul>
       <p className="font-open text-xs text-zinc-400 mt-4">© 2022 INSTAGRAM FROM META</p>

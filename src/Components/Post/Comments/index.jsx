@@ -4,7 +4,7 @@ export default function Comments({ data }) {
   return (
     <div>
       {data.length > 2 && (
-        <a href="_" className="font-open text-zinc-500 text-sm px-3">
+        <a href="/" className="font-open text-zinc-500 text-sm px-3">
           Ver todos os {data.length} comentários
         </a>
       )}
