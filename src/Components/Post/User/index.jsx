@@ -1,6 +1,3 @@
-import { DotsHorizontalIcon } from "@heroicons/react/outline";
-import Verified from "../../../assets/icons/verified.svg";
-
 export default function UserInfo({ data }) {
   return (
     <div className="flex flex-row items-center justify-between py-4 px-3 gap-4">
@@ -17,7 +14,7 @@ export default function UserInfo({ data }) {
           {data.verified && (
             <img
               className="text-blue-500"
-              src={Verified}
+              src="https://instagram-clone-shinodalabs.s3.sa-east-1.amazonaws.com/verified.svg"
               alt="Icon de verificado"
             />
           )}
@@ -26,7 +23,11 @@ export default function UserInfo({ data }) {
           <p className="font-open text-xs cursor-pointer">{data.location}</p>
         )}
       </div>
-      <DotsHorizontalIcon className="w-6 h-6 cursor-pointer" />
+      <img
+        className="cursor-pointer"
+        src="https://instagram-clone-shinodalabs.s3.sa-east-1.amazonaws.com/dots.svg"
+        alt="Dots"
+      />
     </div>
   );
 }
