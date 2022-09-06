@@ -12,7 +12,7 @@ export default function Comments({ data }) {
         {data.map((item, index) => {
           return (
             index <= 1 && (
-              <p className="truncate">
+              <p key={index} className="truncate">
                 <span className="font-bold">{item.username}</span>{" "}
                 {item.comment}
               </p>

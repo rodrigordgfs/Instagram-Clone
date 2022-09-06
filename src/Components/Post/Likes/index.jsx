@@ -9,6 +9,7 @@ export default function Likes({ data }) {
             return (
               index <= 2 && (
                 <img
+                  key={index}
                   className={`w-6 h-6 rounded-full border-2 border-white ${
                     index >= 1 && "-ml-2"
                   }`}
@@ -25,12 +26,14 @@ export default function Likes({ data }) {
           Curtido por <span className="font-bold">{data[0].username}</span>
           {data.length === 2 && (
             <>
-              {" "}e <span className="font-bold">{data[1].username}</span>
+              {" "}
+              e <span className="font-bold">{data[1].username}</span>
             </>
           )}
           {data.length > 2 && (
             <>
-              {" "}e <span className="font-bold">outras pessoas</span>
+              {" "}
+              e <span className="font-bold">outras pessoas</span>
             </>
           )}
           .
