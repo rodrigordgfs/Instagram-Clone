@@ -12,7 +12,7 @@ export default function UserTile() {
         <p className="font-semibold text-sm">mr_shinodaa</p>
         <p className="text-sm font-open text-zinc-500">Rodrigo Shinoda</p>
       </div>
-      <p className="text-xs text-blue-500 font-bold cursor-pointer">Mudar</p>
+      <button className='text-xs font-bold text-blue-500'>Mudar</button>
     </div>
   );
 }

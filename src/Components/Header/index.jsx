@@ -8,7 +8,7 @@ import NewIcon from "../../assets/icons/new.svg";
 
 export default function Header() {
   return (
-    <div className="bg-white flex flex-row border-b border-zinc-200">
+    <header className="bg-white flex flex-row border-b border-zinc-200 sticky top-0 z-9999 shadow-sm">
       <div className="my-0 mx-auto max-w-5xl w-full flex flex-row justify-between items-center px-5 py-3">
         <img src={Logo} alt="Logo do Instagram" />
         <div>
@@ -21,7 +21,7 @@ export default function Header() {
             />
           </div>
         </div>
-        <div>
+        <nav>
           <ul className="flex flex-row gap-5">
             <li>
               <img className="cursor-pointer" src={HomeIcon} alt="Icone Home" />
@@ -46,8 +46,8 @@ export default function Header() {
               />
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
-    </div>
+    </header>
   );
 }

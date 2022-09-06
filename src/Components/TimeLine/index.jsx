@@ -1,17 +1,30 @@
+import { FeedProvider } from "../../Contexts/Feed";
+import { StorieProvider } from "../../Contexts/Storie";
+import { SuggestUsersProvider } from "../../Contexts/SuggestUsers";
+import Feed from "../Feed";
+import Footer from "../Footer";
 import Stories from "../Stories";
 import UserSuggests from "../UserSuggests";
 import UserTile from "../UserTile";
 
 export default function TimeLine() {
   return (
-    <div className="my-0 mx-auto max-w-4xl flex flex-row gap-8 pt-6 justify-center">
-      <div className="w-full max-w-md">
-        <Stories />
+    <div className="my-0 mx-auto max-w-4xl flex flex-row gap-8 py-6 justify-center">
+      <div className="w-full max-w-lg">
+        <StorieProvider>
+          <Stories />
+        </StorieProvider>
+        <FeedProvider>
+          <Feed />
+        </FeedProvider>
       </div>
-      <div className="w-full max-w-sm">
+      <aside className="w-full max-w-sm">
         <UserTile />
-        <UserSuggests />
-      </div>
+        <SuggestUsersProvider>
+          <UserSuggests />
+        </SuggestUsersProvider>
+        <Footer />
+      </aside>
     </div>
   );
 }
