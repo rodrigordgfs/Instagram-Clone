@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Header from "../../Components/Header";
+import Header from "../../Components/Shared/Header";
 
 export default function NotFound() {
   return (

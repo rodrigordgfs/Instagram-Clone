@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { FeedContext } from "../../Contexts/Feed";
+import { FeedContext } from "../../../Contexts/Feed";
 import Post from "../Post";
 
 export default function Feed() {

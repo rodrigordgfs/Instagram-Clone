@@ -1,6 +1,6 @@
-import { FeedProvider } from "../../Contexts/Feed";
-import { StorieProvider } from "../../Contexts/Storie";
-import { SuggestUsersProvider } from "../../Contexts/SuggestUsers";
+import { FeedProvider } from "../../../Contexts/Feed";
+import { StorieProvider } from "../../../Contexts/Storie";
+import { SuggestUsersProvider } from "../../../Contexts/SuggestUsers";
 import Feed from "../Feed";
 import Footer from "../Footer";
 import Stories from "../Stories";

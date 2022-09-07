@@ -19,7 +19,7 @@ export default function Post({ post }) {
         }}
       />
       <Images data={post.images} />
-      <Actions />
+      <Actions id={post.id} />
       <Likes data={post.likes} />
       <Description
         data={{ description: post.description, username: post.user.username }}

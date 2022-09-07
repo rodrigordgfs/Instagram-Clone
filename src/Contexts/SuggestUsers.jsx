@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 export const SuggestUsersContext = createContext();
 
 export const SuggestUsersProvider = ({ children }) => {
-  const [users] = useState([
+  const [suggests] = useState([
     {
       id: 1,
       image:
@@ -41,7 +41,7 @@ export const SuggestUsersProvider = ({ children }) => {
     },
   ]);
   return (
-    <SuggestUsersContext.Provider value={{ users }}>
+    <SuggestUsersContext.Provider value={{ suggests }}>
       {children}
     </SuggestUsersContext.Provider>
   );

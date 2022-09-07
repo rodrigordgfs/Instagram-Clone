@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { UserContext } from "../../../Contexts/User";
 
 export default function Header() {
+  const { user } = useContext(UserContext);
   return (
     <header className="bg-white flex flex-row border-b border-zinc-200 sticky top-0 z-9999 shadow-sm">
       <div className="my-0 mx-auto max-w-5xl w-full flex flex-row justify-between items-center px-5 py-3">
@@ -63,7 +66,7 @@ export default function Header() {
             <li className="hidden lg:block">
               <img
                 className="rounded-full w-6 h-6 outline outline-offset-2 outline-1 outline-zinc-200 cursor-pointer"
-                src="https://instagram-clone-shinodalabs.s3.sa-east-1.amazonaws.com/user.jpg"
+                src={user.image}
                 alt="Imagem do Usuário"
               />
             </li>

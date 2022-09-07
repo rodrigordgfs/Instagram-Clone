@@ -1,6 +1,6 @@
-import Header from "../../Components/Header";
-import MenuMobile from "../../Components/MenuMobile";
-import TimeLine from "../../Components/TimeLine";
+import TimeLine from "../../Components/Home/TimeLine";
+import Header from "../../Components/Shared/Header";
+import MenuMobile from "../../Components/Shared/MenuMobile";
 
 export default function Home() {
   return (
